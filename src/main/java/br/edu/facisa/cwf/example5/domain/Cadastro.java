@@ -6,6 +6,8 @@ import javax.persistence.Id;
 @Entity
 public class Cadastro {
 	
+	private static final long serialVersionUID = -7799369695818057571L;
+	
 	@Id
 	private String id;
 	private String nome;
