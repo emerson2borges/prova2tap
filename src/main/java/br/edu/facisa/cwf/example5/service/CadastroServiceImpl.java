@@ -14,7 +14,7 @@ import br.edu.facisa.cwf.example5.repository.CadastroRepository;
 
 @Service
 @Validated
-public class CadastroServiceImpl {
+public class CadastroServiceImpl implements CadastroService {
 	
     private final CadastroRepository cadastro;
 

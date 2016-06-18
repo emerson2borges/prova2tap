@@ -2,15 +2,10 @@ package br.edu.facisa.cwf.example5.repository;
 
 import java.util.List;
 
+import org.springframework.data.jpa.repository.JpaRepository;
+
 import br.edu.facisa.cwf.example5.domain.Cadastro;
 
-public interface CadastroRepository {
-	
-	public Cadastro findByName(String name);
-	
-	public Cadastro findOne(String id);
+public interface CadastroRepository extends JpaRepository<Cadastro, String>{
 
-	public List<Cadastro> findAll();
-
-	public Cadastro save(Cadastro participant);
 }

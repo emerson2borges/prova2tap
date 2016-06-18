@@ -1,10 +1,12 @@
 package br.edu.facisa.cwf.example5.domain;
 
+import java.io.Serializable;
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
 @Entity
-public class Cadastro {
+public class Cadastro implements Serializable {
 	
 	private static final long serialVersionUID = -7799369695818057571L;
 	

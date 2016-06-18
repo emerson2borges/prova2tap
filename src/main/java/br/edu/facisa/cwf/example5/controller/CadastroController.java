@@ -38,7 +38,7 @@ public class CadastroController {
 					new ResponseEntity<Cadastro>(cadastro, HttpStatus.OK);
 	}
 	
-	@RequestMapping(value="/cadastro/{id}", method = RequestMethod.POST)
+	@RequestMapping(value="/cadastro", method = RequestMethod.POST)
 	public ResponseEntity<String> createCadastro(@RequestBody Cadastro cadastro) {
 
 		try {
